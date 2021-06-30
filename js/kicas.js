@@ -11,5 +11,10 @@
     $('.collapsible').collapsible();
     $('.scrollspy').scrollSpy();
     $('.collapsibleExp').collapsible('open', 0);
+    $("#cvButton").on("click", downloadCV);
   });
   $(".dropdown-trigger").dropdown();
+
+  function downloadCV(){
+    window.open('/documents/CV_CASTREC_Killian.pdf');
+  }
